@@ -377,7 +377,7 @@ func (b *Builder) cleanImage(imageURL string) error {
 
 func (b *Builder) pullArtifact() error{
 
-	command := []string{
+	var command = []string{
 		"/.workflow/bin/thub", "pull",
 		fmt.Sprintf("--username=%s", b.HubUser), fmt.Sprintf("--password=%s", b.HubToken),
 		fmt.Sprintf("--repo=%s", b.HubRepo),
