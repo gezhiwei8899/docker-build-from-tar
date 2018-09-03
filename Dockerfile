@@ -32,10 +32,10 @@ LABEL TencentHubComponent='{\
     {"name": "BUILD_WORKDIR", "default": ".", "desc": "非必填, 工作路径"},\
     {"name": "DOCKERFILE_PATH", "default": "Dockerfile", "desc": "非必填，Dockerfile路径"},\
     {"name": "NO_CACHE", "default": "false", "desc": "非必填，docker 构建缓存标志"},\
-    {"name": "BUILD_ARGS", "desc": "非必填，传递给`--build-arg`的构建参数, 必须是一个有效的json字符串"}\
+    {"name": "BUILD_ARGS", "desc": "非必填，传递给`--build-arg`的构建参数, 必须是一个有效的json字符串"},\
     {"name": "ARTIFACT", "desc": "构建产物结果列表"},\
-    {"name": "ARTIFACT_URL", "desc": "成功上传的构建产物url"}\
-    {"name": "_WORKFLOW_FLAG_HUB_TOKEN", "default": "true", "desc": "非必填, 若为真, 工作流将根据用户名和密码自动填充HUB_USER和HUB_TOKEN"},\
+    {"name": "ARTIFACT_URL", "desc": "成功上传的构建产物url"},\
+    {"name": "_WORKFLOW_FLAG_HUB_TOKEN", "default": "true", "desc": "非必填, 若为真, 工作流将根据用户名和密码自动填充HUB_USER和HUB_TOKEN"}\
   ],\
   "output": [\
     {"name": "IMAGE", "desc": "构建的镜像地址, 不包含tag名称,"},\
